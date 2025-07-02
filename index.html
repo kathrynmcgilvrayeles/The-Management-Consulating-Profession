@@ -13,9 +13,7 @@
 
     .tab-button {
       cursor: pointer;
-      transition: transform 0.2s, background-color 0.2s, border 0.2s;
-      border: 2px solid transparent; /* Default transparent border */
-      border-radius: 1rem; /* Apply border-radius always */
+      transition: transform 0.2s;
     }
 
     .tab-button:hover {
@@ -25,6 +23,7 @@
 
     .tab-button.active {
       border: 2px solid #025159;
+      border-radius: 1rem;
       background-color: #d98e04;
     }
 
@@ -42,17 +41,19 @@
     }
   </style>
 </head>
-<body class="flex justify-center items-center h-screen bg-[#f2f2f2] m-0 p-0">
+<body class="flex justify-center items-start bg-[#f2f2f2] m-0 p-0">
 
-  <div class="max-w-4xl w-full bg-white rounded-xl overflow-hidden flex flex-col md:flex-row shadow-lg">
+  <div class="w-full bg-white border-2 border-[#96ccd9] rounded-xl shadow-lg flex flex-col md:flex-row overflow-hidden m-0">
     
-    <div class="w-full md:w-1/3 bg-[#f2f2f2] flex flex-col items-center justify-start p-6 space-y-8 py-10">
-      <img src="/The-Management-Consulting-Profession/cmc-global-icmci.png" class="w-24 h-24 tab-button active" data-tab="cmc-global" alt="CMC Global Icon">
-      <img src="/The-Management-Consulting-Profession/imc-australia.png" class="w-24 h-24 tab-button" data-tab="imc-australia" alt="IMC Australia Icon">
-      <img src="/The-Management-Consulting-Profession/certified-management-consultant-cmc.png" class="w-24 h-24 tab-button" data-tab="cmc-certification" alt="CMC Certification Icon">
+    <!-- Sidebar with Icons -->
+    <div class="w-full md:w-1/3 bg-[#f2f2f2] flex flex-col items-center justify-start p-4 space-y-6">
+      <img src="https://kathrynmcgilvrayeles.github.io/The-Management-Consulting-Profession/cmc-global-icmci.png" class="w-24 h-24 tab-button active" data-tab="cmc-global" alt="CMC Global Icon">
+      <img src="https://kathrynmcgilvrayeles.github.io/The-Management-Consulting-Profession/imc-australia.png" class="w-24 h-24 tab-button" data-tab="imc-australia" alt="IMC Australia Icon">
+      <img src="https://kathrynmcgilvrayeles.github.io/The-Management-Consulting-Profession/certified-management-consultant-cmc.png" class="w-24 h-24 tab-button" data-tab="cmc-certification" alt="CMC Certification Icon">
     </div>
 
-    <div class="w-full md:w-2/3 p-6 space-y-6 text-[#025159] bg-white">
+    <!-- Content Area -->
+    <div class="w-full md:w-2/3 p-6 space-y-6 text-[#025159] bg-[#f2f2f2]">
       
       <div id="cmc-global" class="tab-content active">
         <h2 class="text-2xl font-bold text-[#025159] mb-2">CMC Global (ICMCI)</h2>
@@ -79,7 +80,7 @@
         <ul class="list-disc list-inside space-y-1">
           <li>The Certified Management Consultant (CMC) is the mark of excellence in management consulting.</li>
           <li>It signifies adherence to the CMC Competency Framework.</li>
-          <li>The CMC designation is a globally recognised standard for professional management consultants.</li>
+          <li>The CMC designation is a globally recognized standard for professional management consultants.</li>
         </ul>
       </div>
 
